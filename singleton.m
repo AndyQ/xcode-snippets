@@ -9,7 +9,7 @@
 // IDECodeSnippetVersion: 2
 + (instancetype) getInstance
 {
-    static  *_in<#name#> = nil;
+    static  *_instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _shared<#name#> = [[[self class] alloc] init];
