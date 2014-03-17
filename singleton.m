@@ -12,8 +12,8 @@
     static  *_instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _shared<#name#> = [[[self class] alloc] init];
+        _instance = [[[self class] alloc] init];
     });
     
-    return _shared<#name#>;
+    return _instance;
 }
