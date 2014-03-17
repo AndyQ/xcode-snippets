@@ -7,9 +7,9 @@
 // IDECodeSnippetLanguage: Xcode.SourceCodeLanguage.Objective-C
 // IDECodeSnippetUserSnippet: 1
 // IDECodeSnippetVersion: 2
-+ (instancetype)shared<#name#>
++ (instancetype) getInsta
 {
-    static *_shared<#name#> = nil;
+    static  *_shared<#name#> = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _shared<#name#> = [[[self class] alloc] init];
