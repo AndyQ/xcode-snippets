@@ -12,7 +12,7 @@
     static <#class#> *_shared<#name#> = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _shared<#name#> = [[self class] alloc] init[;
+        _shared<#name#> = [[[self class] alloc] init];
     });
     
     return _shared<#name#>;
