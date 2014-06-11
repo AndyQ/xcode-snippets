@@ -7,11 +7,9 @@
 // IDECodeSnippetLanguage: Xcode.SourceCodeLanguage.Objective-C
 // IDECodeSnippetUserSnippet: 1
 // IDECodeSnippetVersion: 2
-^{
-<#code#>
-}+ (instancetype) getInstance
++ (instancetype) getInstance
 {
-    static *<#type#>_instance = nil;
+    static id_instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _instance = [[[self class] alloc] init];
