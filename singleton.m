@@ -1,20 +1,19 @@
-// Singleton
-// Snippet to create singleton
+// singleton
+// Singleton shared method
 //
 // IDECodeSnippetCompletionPrefix: singleton
 // IDECodeSnippetCompletionScopes: [ClassImplementation]
-// IDECodeSnippetIdentifier: E414E5C9-BD29-4BF5-90F0-B8E32D1EFF4F
+// IDECodeSnippetIdentifier: 943C3A03-33A3-4D8E-89D7-4C014CF8E380
 // IDECodeSnippetLanguage: Xcode.SourceCodeLanguage.Objective-C
 // IDECodeSnippetUserSnippet: 1
-// IDECodeSnippetVersion: 0
+// IDECodeSnippetVersion: 2
 + (instancetype) getInstance
 {
-    static id instance = nil;
-    
+    static <#type#> *_instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        instance = [VectorImageManager new];
+        _instance = [[[self class] alloc] init];
     });
     
-    return instance;
+    return _instance;
 }
