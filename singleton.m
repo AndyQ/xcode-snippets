@@ -9,7 +9,7 @@
 // IDECodeSnippetVersion: 2
 + (instancetype) getInstance
 {
-    static id_instance = nil;
+    static id _instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _instance = [[[self class] alloc] init];
