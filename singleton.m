@@ -1,5 +1,5 @@
 // Singleton
-// 
+// Snippet to create singleton
 //
 // IDECodeSnippetCompletionPrefix: singleton
 // IDECodeSnippetCompletionScopes: [ClassImplementation]
